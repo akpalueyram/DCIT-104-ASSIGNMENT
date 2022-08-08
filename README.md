@@ -1,30 +1,30 @@
 #include<iostream>
 using namespace std;
-void prime(int x);
+void prime(int a);
 int main()
 {
-int n = 0;
+int b = 0;
    cout<<"Any number:"<<endl;
-   cin>>n;
-   prime(n);
+   cin>>b;
+   prime(b);
 }
-void prime (int x)
+void prime (int a)
 {
 int sum = 0;
-  for(int i = x;i>1;i-)
+  for(int m = a;m>1;m-)
   {
   bool isPrime = true;
-  for (int j=2;j<i;j++)
-    if(i%j==0)
+  for (int n=2;n<m;n++)
+    if(m%n==0)
         {
         isPrime = false;
-        j=i;
+        n=m;
         }
    }
    if (isPrime == true)
        {
-       cout<<"prime numbers:"<<i<<",";
-       sum = sum + i;
+       cout<<"prime numbers:"<<m<<",";
+       sum = sum + m;
        }
    }
    cout<<endl<<"sum of the given prime numbers:"<<sum;
